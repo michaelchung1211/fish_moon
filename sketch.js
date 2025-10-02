@@ -82,7 +82,7 @@ function loadimg(){
   fst_img_cloud.push(loadImage("assets/fst_cloud1.png"));
   fst_img_cloud.push(loadImage("assets/fst_cloud2.png"));
   fst_img_cloud.push(loadImage("assets/fst_cloud3.png"));
-  fst_img_cloud.push(loadImage("assets/fst_cloud4.png"));
+  
   fst_img_tree_1b = loadImage("assets/fst_tree_1b.png");
   fst_img_tree_1t = loadImage("assets/fst_tree_1t.png");
   fst_img_tree_2b = loadImage("assets/fst_tree_2b.png");
@@ -1666,4 +1666,5 @@ class FireParticle {
   }
 
 }
+
 
