@@ -28,6 +28,9 @@ function setup() {
   //let fsButton = createButton("全螢幕");
   //fsButton.position(20, 20);
   //fsButton.mousePressed(toggleFullscreen);
+  let c = canvas.elt; // get the raw HTML canvas element
+  c.addEventListener("touchstart", e => e.preventDefault(), { passive: false });
+  c.addEventListener("touchmove", e => e.preventDefault(), { passive: false });
 }
 
 function draw(){
@@ -1661,4 +1664,5 @@ class FireParticle {
   isDead() {
     return this.life <= 0;
   }
+
 }
