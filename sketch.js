@@ -836,7 +836,7 @@ function setup_ast_comet(){
   ast_knobY = ast_joyY;
   ast_moving = false;
   
-  ast_hp = 5;
+  ast_hp = 10;
   ast_player_facing = -PI/2;
   ast_invtime = 120;
 }
@@ -986,7 +986,7 @@ function call_ast_joycon(){
 }
 function call_ast_comet(){
   ast_invtime--;
-  if (t % 10 == 0){
+  if (t % 10 == 0 && random(0, 10) < 8.5){
     call_ast_createcomet();
   }
   for (let i = 0; i < ast_cnt; i++){
