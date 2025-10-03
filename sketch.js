@@ -1556,8 +1556,8 @@ function launchRocket(x, y, initialVy) {
 
 // explode into many particles
 function explode(x, y, baseColor) {
-  hbd_sound_firework.setVolume(random(0.04, 0.2));
-  hbd_sound_firework.play();
+  //hbd_sound_firework.setVolume(random(0.04, 0.2));
+  //hbd_sound_firework.play();
   let particleCount = int(random(40, 120));
   for (let i = 0; i < particleCount; i++) {
     let angle = random(TWO_PI);
